@@ -4,42 +4,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Figtree:wght@400;500;600;700&display=swap");
 
 :root {
-  /* Cream neutrals */
-  --cream-50: #FBF7F0;
-  --cream-100: #F7F0E4;
-  --cream-200: #F4EBDE;
-  --cream-300: #EFE3CF;
+  /* Cornflower palette (theme_cornflower.css, owner pick 2026-07-17) —
+     variable names kept from the warm system (terra=accent, etc.). */
+  /* Neutrals */
+  --cream-50: #F5F7FB;
+  --cream-100: #FFFFFF;
+  --cream-200: #E9EDF5;
+  --cream-300: #EDE9DC;
   /* Ink */
-  --ink-900: #33291F;
-  --ink-800: #38302A;
-  --ink-600: #6B5D4E;
-  --ink-400: #9A8C7C;
-  /* Terracotta accent */
-  --terra-600: #8F4A2C;
-  --terra-500: #B0603C;
-  --terra-200: #EED3C4;
+  --ink-900: #1F2940;
+  --ink-800: #2B3550;
+  --ink-600: #414D68;
+  --ink-400: #65718C;
+  /* Accent (cornflower) */
+  --terra-600: #2E4A8C;
+  --terra-500: #3F5FA8;
+  --terra-200: #E3E9F6;
   /* Support tints */
-  --sage-600: #5D6B4C;
-  --sage-400: #849070;
-  --sage-200: #E4E7DA;
-  --sage-eyebrow: #8F9B7E;
-  --sky-600: #4C616B;
-  --sky-400: #708490;
-  --sky-200: #D9E0E4;
-  --sand-600: #8A7147;
-  --sand-400: #A88E60;
+  --sage-600: #4C6252;
+  --sage-400: #7A9184;
+  --sage-200: #E0E9E2;
+  --sage-eyebrow: #7A9184;
+  --sky-600: #3D5578;
+  --sky-400: #6C82A3;
+  --sky-200: #D9E4F0;
+  --sand-600: #7C7048;
+  --sand-400: #99906B;
   /* Borders */
-  --line: #E8DBC8;
-  --line-soft: #EADFCE;
+  --line: #DEE3EE;
+  --line-soft: #E6EAF3;
   /* Inverse */
-  --inv-bg: #33291F;
-  --inv-heading: #F4EBDE;
-  --inv-body: #C4B6A4;
-  --inv-accent: #C8A987;
-  --inv-link: #E4B893;
+  --inv-bg: #1F2940;
+  --inv-heading: #EDF1F9;
+  --inv-body: #B9C4DC;
+  --inv-accent: #A9BCE0;
+  --inv-link: #C3D2EE;
   /* Semantic */
   --surface-page: var(--cream-50);
-  --surface-section: var(--cream-200);
+  --surface-section: #EBEFF7;
   --surface-inverse: var(--inv-bg);
   --text-heading: var(--ink-900);
   --text-body: var(--ink-600);
@@ -47,10 +49,10 @@
   --text-muted: var(--ink-400);
   --accent: var(--terra-500);
   --accent-hover: var(--terra-600);
-  --on-accent: var(--cream-50);
+  --on-accent: #F5F7FB;
   --border: var(--line);
-  --selection: #F0DFCB;
-  --shadow-device: 0 24px 60px rgba(76, 58, 40, 0.22);
+  --selection: #DCE4F4;
+  --shadow-device: 0 24px 60px rgba(31, 41, 64, 0.20);
   /* Layout */
   --content-max: 1080px;
   --section-pad-x: 40px;
