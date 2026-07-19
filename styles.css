@@ -412,6 +412,12 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
   padding: 16px 20px;
   font-size: 15.5px; line-height: 1.5;
 }
+.chat-name {
+  align-self: flex-start;
+  margin: 2px 0 -8px 12px;
+  font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+  font-weight: 700; color: var(--sage-600);
+}
 .bubble-homie {
   align-self: flex-start; max-width: 90%;
   background: var(--surface-section);
