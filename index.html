@@ -1,268 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Homie — the family calendar that knows how long it actually takes</title>
-<meta name="description" content="Homie turns 'soccer Saturday 9am' into the whole commitment — prep, travel, arrival — and answers 'can we fit it?' before you promise. Just ask your Homie. Invite-only iPhone alpha.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://homie.family/">
-<meta property="og:title" content="Homie — the family calendar that knows how long it actually takes">
-<meta property="og:description" content="Just ask your Homie 'can we fit it?' in plain language and get the real impact on your week. No ads, no trackers — a family scheduler built by a parent who uses it daily.">
-<meta property="og:site_name" content="Homie">
-<meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+</head><body class="p-home">
 
-<nav class="wrap nav">
-  <div class="wordmark"><span class="homie">Homie</span></div>
-  <div class="nav-links">
-    <a class="nav-anchor" href="#how">How it works</a>
-    <a class="nav-anchor" href="#privacy">Privacy</a>
-    <!-- INVITE-CTA: when the public TestFlight link exists, swap this href
-         and the hero's (2 total) for the TestFlight URL. -->
-    <a class="btn sm" href="mailto:homie.family@protonmail.com?subject=Homie%20invite%20request">Meet your Homie</a>
-  </div>
-</nav>
+<nav class="wrap" style="display:flex;align-items:center;justify-content:space-between;padding-top:28px">
+<a href="index.html" style="display:flex;align-items:center;gap:11px;color:var(--text-strong)">
+<svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true" style="display:block;flex:none"><defs><linearGradient id="hm" x1="18" y1="6" x2="82" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4E6FBE"/><stop offset=".48" stop-color="#3F5FA8"/><stop offset="1" stop-color="#2E4A8C"/></linearGradient></defs><rect width="100" height="100" rx="22.5" fill="url(#hm)"/><rect x="60" y="22" width="7.5" height="20" rx="2.87" fill="#F5F7FB"/><path fill="#F5F7FB" d="M52.6 19.1 L79 42 Q82 44.4 82 48 L82 80 Q82 85 77 85 L23 85 Q18 85 18 80 L18 48 Q18 44.4 21 42 L47.4 19.1 Q50 16.8 52.6 19.1 Z"/><circle cx="33" cy="64" r="4.8" fill="#E8A98C" opacity=".85"/><circle cx="67" cy="64" r="4.8" fill="#E8A98C" opacity=".85"/><ellipse cx="41" cy="55" rx="4" ry="5" fill="#2E4A8C"/><ellipse cx="59" cy="55" rx="4" ry="5" fill="#2E4A8C"/><path d="M43.5 66 Q50 71 56.5 66" fill="none" stroke="#2E4A8C" stroke-width="3" stroke-linecap="round"/></svg>
+<span style="font:600 26px var(--font-display);letter-spacing:-0.01em">Homie</span></a>
+<div style="display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500">
+<a class="navlink" href="how-it-works.html">How it works</a>
+<a class="navlink" href="features.html">Features</a>
+<a class="navlink" href="family.html">Family</a>
+<a class="navlink" href="privacy.html">Privacy</a>
+<a class="btn" style="padding:var(--pad-btn-sm);font-size:15px" href="mailto:homie.family@protonmail.com?subject=Homie%20invite%20request">Request an invite</a>
+</div></nav>
 
-<header class="wrap hero">
-  <div>
-    <p class="eyebrow">For families who juggle</p>
-    <h1>“Can we fit it?”<br>Just ask your Homie.</h1>
-    <p class="lead">The hard part of family life isn’t knowing what’s on the calendar — it’s deciding whether one more thing fits. Ask Homie in plain language, and it answers with the real impact on your week.</p>
-    <div class="cta-row">
-      <!-- INVITE-CTA -->
-      <a class="btn" href="mailto:homie.family@protonmail.com?subject=Homie%20invite%20request">Meet your Homie</a>
-      <span class="cta-note">Invite-only TestFlight alpha<br>iPhone, for now</span>
-    </div>
-  </div>
-  <div class="phone-slot">
-    <div class="phone">
-      <div class="phone-screen">
-        <div class="app-mock walk" role="img" aria-label="A short looping walkthrough of the Homie app: scrolling the week's plans, spotting a conflict where two kids need an adult at the same time and reassigning coverage, then asking &ldquo;can we fit it?&rdquo; and getting a yes with the two changes it would take.">
-          <div class="am-status">
-            <span>9:41</span>
-            <span class="am-status-right">
-              <span class="am-sig"><i></i><i></i><i></i><i></i></span>
-              <span class="am-batt"></span>
-            </span>
+<header class="wrap hero" style="display:grid;grid-template-columns:1fr 380px;gap:64px;align-items:center;padding-top:88px;padding-bottom:96px">
+<div>
+<p class="eyebrow" style="margin:0 0 20px;color:var(--sage-eyebrow)">For families who juggle</p>
+<h1 style="margin:0;font:var(--text-display);letter-spacing:var(--tracking-display);color:var(--text-heading);text-wrap:pretty">“Can we fit it?”<br>Just ask Homie.</h1>
+<p style="margin:28px 0 0;font:var(--text-lead);max-width:520px;text-wrap:pretty">The hard part of family life isn’t knowing what’s on the calendar — it’s deciding whether one more thing fits. Ask Homie in plain language, and it answers with the real impact on your week.</p>
+<div style="display:flex;align-items:center;gap:18px;margin-top:36px">
+<a class="btn" href="mailto:homie.family@protonmail.com?subject=Homie%20invite%20request">Request an invite</a>
+<span style="font-size:14px;color:var(--text-muted);line-height:1.4">Invite-only TestFlight alpha<br>iPhone, for now</span>
+</div></div>
+<div style="display:flex;justify-content:center">
+<div class="hphone" aria-hidden="true">
+  <div class="hscreen">
+    <div class="m-status"><span>9:41</span><span class="dots"><i></i><i></i><i></i></span></div>
+    <div class="appbar"><b>This week</b><small>Everyone · Toronto</small></div>
+    <div class="scenes">
+
+      <div class="scene scene-a">
+        <div class="feed">
+          <div class="daylbl">SATURDAY</div>
+          <div class="pcardm">
+            <div class="ph"><b>Soccer tournament</b><small>9:00 AM</small></div>
+            <div class="chiprow"><span class="mchip"><i style="background:var(--member-1)"></i>Maya</span><span class="cov">Grandma drives</span></div>
+            <div class="hint"><span><i style="background:var(--sage-200)"></i>leave 8:20</span><span><i style="background:var(--sky-200)"></i>~25 min</span><span><i style="background:var(--accent)"></i>plays 9:00</span></div>
           </div>
-
-          <div class="am-stage">
-            <!-- Screen 1 · Plans · scroll the week -->
-            <div class="am-screen s1">
-              <div class="am-header">Plans</div>
-              <div class="am-roster">
-                <span class="am-chip all">All</span>
-                <span class="am-chip" style="background:var(--terra-600)">Ma</span>
-                <span class="am-chip" style="background:var(--sand-600)">Le</span>
-                <span class="am-chip" style="background:var(--sky-600)">Mo</span>
-                <span class="am-chip" style="background:var(--sage-600)">Da</span>
-              </div>
-              <div class="am-tabs">
-                <span class="am-tab on">Agenda</span>
-                <span class="am-tab">Lanes</span>
-                <span class="am-tab">Week</span>
-                <span class="am-tab">Month</span>
-              </div>
-              <div class="am-feed">
-                <div class="am-scroll">
-                  <div class="am-day">SAT · TODAY</div>
-                  <span class="am-pill">Dad free 8:00 – 12:00</span>
-                  <div class="am-card">
-                    <div class="am-card-top">
-                      <span class="am-card-title">Soccer — Maya</span>
-                      <span class="am-must">MUST</span>
-                    </div>
-                    <div class="am-meta">9:00 – 10:00 AM · Lakeshore field · Dad drives</div>
-                    <div class="am-winbar"><i class="s-pre"></i><i class="s-drv"></i><i class="s-buf"></i><i class="s-evt"></i></div>
-                    <div class="am-wintimes"><span>8:13</span><span>10:00</span></div>
-                    <div class="am-leave">Leave <strong>8:13</strong> · 22 min drive · arrive by 8:45</div>
-                  </div>
-                  <div class="am-ev"><span class="t">4:00 PM</span><span class="n">Piano — Leo</span></div>
-                  <div class="am-day">SUN</div>
-                  <div class="am-ev"><span class="t">10:00 AM</span><span class="n">Farmers market</span></div>
-                  <div class="am-ev"><span class="t">6:00 PM</span><span class="n">Family dinner</span></div>
-                  <div class="am-day">MON</div>
-                  <div class="am-ev"><span class="t">3:30 PM</span><span class="n">Dentist — Maya</span></div>
-                  <div class="am-ev"><span class="t">5:30 PM</span><span class="n">Swim — Leo</span></div>
-                  <div class="am-day">TUE</div>
-                  <div class="am-ev"><span class="t">8:00 AM</span><span class="n">Early drop-off — Leo</span></div>
-                  <div class="am-ev"><span class="t">7:00 PM</span><span class="n">Book club — Mom</span></div>
-                  <div class="am-day">WED</div>
-                  <div class="am-ev"><span class="t">4:30 PM</span><span class="n">Guitar — Maya</span></div>
-                </div>
-              </div>
-              <div class="am-nav">
-                <div class="am-navitem on"><span class="ic">▦</span>Plans</div>
-                <div class="am-navitem"><span class="ic">◴</span>Schedule</div>
-                <div class="am-navitem"><span class="ic">⌂</span>Home</div>
-              </div>
-            </div>
-
-            <!-- Screen 2 · Plans · conflict resolution -->
-            <div class="am-screen s2">
-              <div class="am-header">Plans</div>
-              <div class="am-roster">
-                <span class="am-chip all">All</span>
-                <span class="am-chip" style="background:var(--terra-600)">Ma</span>
-                <span class="am-chip" style="background:var(--sand-600)">Le</span>
-                <span class="am-chip" style="background:var(--sky-600)">Mo</span>
-                <span class="am-chip" style="background:var(--sage-600)">Da</span>
-              </div>
-              <div class="am-tabs">
-                <span class="am-tab on">Agenda</span>
-                <span class="am-tab">Lanes</span>
-                <span class="am-tab">Week</span>
-                <span class="am-tab">Month</span>
-              </div>
-              <div class="am-feed">
-                <div class="am-day">MON</div>
-                <div class="am-conflict">
-                  <div class="amc-row">
-                    <span class="amc-head">⚠ 1 conflict</span>
-                    <span class="amc-kind">Not enough adults</span>
-                  </div>
-                  <div class="amc-sub">
-                    <span class="amc-dots"><i style="background:var(--terra-600)"></i><i style="background:var(--sand-600)"></i></span>
-                    <span class="amc-time">3:30 – 4:30 PM</span>
-                    <span class="amc-chev">›</span>
-                  </div>
-                  <div class="fb">
-                    <div class="fb-item">
-                      <div class="fb-name"><i class="fb-dot" style="background:var(--terra-600)"></i>Dentist · Maya<span class="fb-t">3:30–4:30</span></div>
-                      <div class="fb-track"><i class="fb-prep"></i><i class="fb-trav"></i><i class="fb-evt"></i><i class="fb-sp"></i><span class="fb-band"></span></div>
-                    </div>
-                    <div class="fb-item">
-                      <div class="fb-name"><i class="fb-dot" style="background:var(--sand-600)"></i>Swim · Leo<span class="fb-t">3:30–4:30</span></div>
-                      <div class="fb-track"><i class="fb-prep"></i><i class="fb-trav"></i><i class="fb-evt"></i><i class="fb-sp"></i><span class="fb-band"></span></div>
-                    </div>
-                    <div class="fb-legend">
-                      <span><i class="k k-prep"></i>prep</span>
-                      <span><i class="k k-trav"></i>travel</span>
-                      <span><i class="k k-evt"></i>event</span>
-                      <span><i class="k k-ovl"></i>overlap</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="am-nav">
-                <div class="am-navitem on"><span class="ic">▦</span>Plans</div>
-                <div class="am-navitem"><span class="ic">◴</span>Schedule</div>
-                <div class="am-navitem"><span class="ic">⌂</span>Home</div>
-              </div>
-              <!-- resolution sheet slides up over the day -->
-              <div class="am-dim"></div>
-              <div class="am-sheet">
-                <div class="ash-grip"></div>
-                <div class="ash-dots"><i style="background:var(--terra-600)"></i><i style="background:var(--sand-600)"></i></div>
-                <div class="ash-title">No adult free for Leo</div>
-                <div class="ash-sub">Dentist + Swim · 3:30 PM – 4:30 PM</div>
-                <div class="ash-cov">“Swim” covered by</div>
-                <div class="ash-chips">
-                  <span class="ash-chip chosen">Mom</span>
-                  <span class="ash-chip">Dad</span>
-                  <span class="ash-chip">Extra help</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Screen 3 · Schedule · can we fit it? -->
-            <div class="am-screen s3">
-              <div class="am-header">Schedule</div>
-              <div class="am-feed am-ask">
-                <div class="ask-quote">“Can we fit camping Aug 12–15?”</div>
-                <div class="ask-check ac1">
-                  <div class="ask-kicker">Here’s what I’m checking</div>
-                  <div class="ask-line"><span class="ai">🗓</span> Wed, Aug 12 – Sat, Aug 15 · 4 days</div>
-                  <div class="ask-line"><span class="ai">👤</span> Whole family</div>
-                  <div class="ask-line"><span class="ai">📍</span> Pinewood campground</div>
-                </div>
-                <div class="ask-verdict ac2">
-                  <div class="ask-vhead">Can we fit this?</div>
-                  <div class="ask-vans">Yes — if 2 things give</div>
-                  <div class="ask-r">
-                    <span class="ask-rl">⚠ Swim — Leo · Thu</span>
-                    <span class="ask-c chosen">Skip it Thu</span>
-                  </div>
-                  <div class="ask-r">
-                    <span class="ask-rl">⚠ Dentist — Maya · Fri</span>
-                    <span class="ask-c chosen">Move to 9:00 AM</span>
-                  </div>
-                </div>
-                <div class="ask-btn ac3">Add to Plans + 2 changes</div>
-              </div>
-              <div class="am-nav">
-                <div class="am-navitem"><span class="ic">▦</span>Plans</div>
-                <div class="am-navitem on"><span class="ic">◴</span>Schedule</div>
-                <div class="am-navitem"><span class="ic">⌂</span>Home</div>
-              </div>
-            </div>
+          <div class="pcardm">
+            <div class="ph"><b>Swim lesson</b><small>11:00 AM</small></div>
+            <div class="chiprow"><span class="mchip"><i style="background:var(--member-2)"></i>Leo</span><span class="cov">Dad · leave 10:35</span></div>
+          </div>
+          <div class="daylbl">SUNDAY</div>
+          <div class="pcardm">
+            <div class="ph"><b>Birthday party</b><small>2:00 PM</small></div>
+            <div class="chiprow"><span class="mchip"><i style="background:var(--member-2)"></i>Leo</span><span class="cov">across town</span></div>
           </div>
         </div>
       </div>
+
+      <div class="scene scene-b">
+        <div class="scenetitle">Saturday · a clash</div>
+        <div class="conf">
+          <div class="confhd"><span class="rdot"></span>Not enough adults <small>· 6:00 PM</small></div>
+          <div class="clane"><span class="who">Maya</span><div class="ctrack"><div class="cblk" style="left:28%;width:48%;background:var(--accent);color:var(--on-accent)">Soccer</div></div></div>
+          <div class="clane"><span class="who">Leo</span><div class="ctrack"><div class="cblk" style="left:32%;width:46%;background:var(--accent);color:var(--on-accent)">Karate</div></div></div>
+          <div class="clane"><span class="who" style="color:var(--danger)">Dad</span><div class="ctrack" style="border-color:var(--danger-soft)"><div class="cblk" style="left:28%;width:50%;background:var(--danger-soft);color:var(--danger)">one driver</div></div></div>
+          <div class="fixrow"><span class="fchip on">Kate takes Leo</span><span class="fchip">Extra help</span></div>
+          <div class="resolved">✓ Resolved — both kids covered</div>
+        </div>
+      </div>
+
+      <div class="scene scene-c">
+        <div class="scenetitle">Before you say yes</div>
+        <div class="ask">Can we fit camping Aug 12–15?</div>
+        <div class="ans"><span class="ak">Yes — if 3 things give</span>Skip Maya’s Thursday swim · nanny’s Friday off · Leo’s piano needs a ride.</div>
+        <div class="addbtn">Add to Plans · +3 changes</div>
+      </div>
+
+    </div>
+    <div class="tabbar">
+      <span class="on"><i></i>Plans</span>
+      <span><i></i>Schedule</span>
+      <span><i></i>Home</span>
     </div>
   </div>
+</div>
+</div>
 </header>
 
-<section id="how" class="wrap how">
-  <div>
-    <p class="eyebrow">The mental load, lifted</p>
-    <h2>Stop doing the math in your head at 10pm.</h2>
-    <p class="body">Every invitation kicks off the same silent calculation — who’s free, who’s driving, what has to move. Your Homie does that calculation for you, before you promise anyone anything.</p>
-  </div>
-  <div class="chat" aria-label="Example conversation with Homie">
-    <div class="bubble-user">Leo got invited to a birthday party Sunday at 2, across town. Can we fit it?</div>
-    <div class="chat-name">Homie</div>
-    <div class="bubble-homie">
-      <strong class="verdict">Yes — but it’s tight.</strong>
-      Maya’s soccer ends at 1:15 on the other side of town. Mom is free from 1:30 and could do the drop-off, arriving on time. Nothing else in the week moves.
-    </div>
-    <div class="bubble-user">Ok Homie — put it in with Mom driving.</div>
-  </div>
-</section>
+<section id="how" class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding-bottom:96px">
+<div>
+<p class="eyebrow" style="margin:0 0 16px;color:var(--accent)">The mental load, lifted</p>
+<h2 style="margin:0;font:var(--text-h2);color:var(--text-heading);text-wrap:pretty">Stop doing the math in your head at 10pm.</h2>
+<p style="margin:20px 0 0;font:var(--text-body-lg);text-wrap:pretty">Every invitation kicks off the same silent calculation — who’s free, who’s driving, what has to move. Homie does that calculation for you, before you promise anyone anything.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="align-self:flex-end;max-width:85%;background:var(--accent);color:var(--on-accent);border-radius:20px 20px 4px 20px;padding:var(--pad-bubble);font-size:15.5px;line-height:1.5">Leo got invited to a birthday party Sunday at 2:00 PM, across town. Can we fit it?</div>
+<div style="align-self:flex-start;max-width:90%;background:var(--surface-section);border-radius:20px 20px 20px 4px;padding:18px 22px;font-size:15.5px;line-height:1.6;color:var(--text-strong)">
+<strong style="display:block;color:var(--sage-600);font-size:13px;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:8px">Yes — but it’s tight.</strong>
+Maya’s soccer ends at 1:15 PM on the other side of town. Mom is free from 1:30 PM and could do the drop-off, arriving on time. Nothing else in the week moves.</div>
+<div style="align-self:flex-end;max-width:85%;background:var(--accent);color:var(--on-accent);border-radius:20px 20px 4px 20px;padding:var(--pad-bubble);font-size:15.5px;line-height:1.5">Ok — put it in with Mom driving.</div>
+</div></section>
 
-<section class="window-section">
-  <div class="wrap">
-    <p class="eyebrow">The committed window</p>
-    <h2>How it knows: a 9 am game doesn’t start at 9 am.</h2>
-    <div class="window-panel">
-      <div class="window-bar" role="img" aria-label="A 9 am soccer game shown as its whole commitment: 15 minutes of prep, a 22-minute drive, a 10-minute buffer, then the game itself from 9 to 10 am.">
-        <div class="seg seg-prep"><span class="t">Prep</span><span class="s">15 min</span></div>
-        <div class="seg seg-drive"><span class="t">Drive</span><span class="s">22 min</span></div>
-        <div class="seg seg-buffer"><span class="t">Buffer</span><span class="s">10 min</span></div>
-        <div class="seg seg-event"><span class="t">Soccer — Maya · Dad drives</span><span class="s">9:00 – 10:00 am · Lakeshore field</span></div>
-      </div>
-      <div class="window-caption">
-        <span>out the door by <strong>8:13 am</strong></span>
-        <span>the whole commitment: <strong>8:13 – 10:00 am</strong></span>
-      </div>
-    </div>
-  </div>
-</section>
+<section style="background:var(--surface-section);padding:88px 0"><div class="wrap">
+<p class="eyebrow" style="margin:0 0 16px;color:var(--accent)">The committed window</p>
+<h2 style="margin:0;font:var(--text-h2);color:var(--text-heading);max-width:640px;text-wrap:pretty">How it knows: a 9:00 AM game doesn’t start at 9:00 AM.</h2>
+<div style="margin-top:40px;background:var(--surface-page);border:1px solid var(--border);border-radius:var(--radius-panel);padding:36px 40px">
+<div style="display:flex;gap:4px;height:64px">
+<div style="flex:15;display:flex;flex-direction:column;justify-content:center;align-items:center;background:var(--sage-200);border-radius:10px 4px 4px 10px"><span style="font-size:13px;font-weight:600;color:var(--sage-600)">Prep</span><span style="font-size:12px;color:var(--sage-400)">15 min</span></div>
+<div style="flex:22;display:flex;flex-direction:column;justify-content:center;align-items:center;background:var(--sky-200);border-radius:4px"><span style="font-size:13px;font-weight:600;color:var(--sky-600)">Drive</span><span style="font-size:12px;color:var(--sky-400)">22 min</span></div>
+<div style="flex:10;display:flex;flex-direction:column;justify-content:center;align-items:center;background:var(--cream-300);border-radius:4px"><span style="font-size:13px;font-weight:600;color:var(--sand-600)">Buffer</span><span style="font-size:12px;color:var(--sand-400)">10 min</span></div>
+<div style="flex:60;display:flex;flex-direction:column;justify-content:center;padding-left:20px;background:var(--accent);border-radius:4px 10px 10px 4px"><span style="font-size:14px;font-weight:600;color:var(--on-accent)">Soccer game — Maya · Dad drives</span><span style="font-size:12px;color:var(--terra-200)">9:00 – 10:00 AM · Lakeshore field</span></div>
+</div>
+<div style="display:flex;justify-content:space-between;margin-top:12px;font-size:13px;color:var(--text-muted)"><span>leaves the house <strong style="color:var(--text-body)">8:13 AM</strong></span><span>the whole commitment: <strong style="color:var(--text-body)">8:13 – 10:00 AM</strong></span></div>
+</div></div></section>
 
-<section id="privacy" class="privacy-section">
-  <div class="wrap privacy-grid">
-    <div>
-      <p class="eyebrow">Your family’s week is nobody’s business</p>
-      <h2>No ads. No trackers. No data brokers. Ever.</h2>
-      <a class="privacy-link" href="https://privacy.homie.family/">Read the full privacy policy →</a>
-    </div>
-    <div class="privacy-body">Voice stays on the phone. Your household’s data is readable only by your signed-in family. AI that forgets. Kids join by a parent’s invite only.</div>
-  </div>
-</section>
+<section id="privacy" style="background:var(--surface-inverse);padding:96px 0"><div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:72px">
+<div>
+<p class="eyebrow" style="margin:0 0 16px;color:var(--inv-accent)">Your family’s week is nobody’s business</p>
+<h2 style="margin:0;font:var(--text-h2);color:var(--inv-heading);text-wrap:pretty">No ads. No trackers. No data brokers. Ever.</h2>
+<a href="https://privacy.homie.family/" style="display:inline-block;margin-top:26px;color:var(--inv-link);font-size:15px;font-weight:600">Read the full privacy policy →</a>
+</div>
+<div style="font-size:14.5px;line-height:1.6;color:var(--inv-body)">Voice stays on the phone. Your household’s data is readable only by your signed-in family. AI that forgets. Kids join by a parent’s invite only.</div>
+</div></section>
 
-<footer>
-  <div class="wrap footer-row">
-    <span class="footer-mark">Homie</span>
-    <div class="footer-links">
-      <a href="https://privacy.homie.family/">Privacy policy</a>
-      <a href="mailto:homie.family@protonmail.com">Contact</a>
-    </div>
-    <span>homie.family · made by a parent who uses it daily</span>
-  </div>
-</footer>
-
-</body>
-</html>
+<footer style="border-top:1px solid var(--line-soft)"><div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center;padding-top:32px;padding-bottom:32px;font-size:13.5px;color:var(--text-muted)">
+<a href="index.html" style="display:flex;align-items:center;gap:9px;color:var(--text-body)">
+<svg width="22" height="22" viewBox="0 0 100 100" aria-hidden="true" style="display:block;flex:none"><defs><linearGradient id="hmf" x1="18" y1="6" x2="82" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4E6FBE"/><stop offset=".48" stop-color="#3F5FA8"/><stop offset="1" stop-color="#2E4A8C"/></linearGradient></defs><rect width="100" height="100" rx="22.5" fill="url(#hmf)"/><rect x="60" y="22" width="7.5" height="20" rx="2.87" fill="#F5F7FB"/><path fill="#F5F7FB" d="M52.6 19.1 L79 42 Q82 44.4 82 48 L82 80 Q82 85 77 85 L23 85 Q18 85 18 80 L18 48 Q18 44.4 21 42 L47.4 19.1 Q50 16.8 52.6 19.1 Z"/><ellipse cx="41" cy="55" rx="4" ry="5" fill="#2E4A8C"/><ellipse cx="59" cy="55" rx="4" ry="5" fill="#2E4A8C"/><path d="M43.5 66 Q50 71 56.5 66" fill="none" stroke="#2E4A8C" stroke-width="3" stroke-linecap="round"/></svg>
+<span style="font:400 17px var(--font-display)">Homie</span></a>
+<div style="display:flex;flex-wrap:wrap;gap:24px">
+<a class="navlink" href="how-it-works.html" style="color:var(--text-muted)">How it works</a>
+<a class="navlink" href="features.html" style="color:var(--text-muted)">Features</a>
+<a class="navlink" href="family.html" style="color:var(--text-muted)">Family</a>
+<a class="navlink" href="faq.html" style="color:var(--text-muted)">FAQ</a>
+<a href="https://privacy.homie.family/" style="color:var(--text-muted)">Privacy policy</a>
+<a href="mailto:homie.family@protonmail.com" style="color:var(--text-muted)">Contact</a>
+</div>
+<span>homie.family · made by a parent who uses it daily</span>
+</div></footer>
+</body></html>
