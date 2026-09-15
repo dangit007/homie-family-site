@@ -1,170 +1,171 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How Homie works</title>
+<title>How Homie works — four steps, and the week starts making sense</title>
+<meta name="description" content="Introduce your family, add what's coming up, ask before you say yes, and bring everyone in. No setup weekend, no spreadsheets to import.">
 <link rel="icon" href="favicon.png" type="image/png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Homie">
 <meta property="og:title" content="How Homie works">
-<meta property="og:description" content="Homie looks at a plan the way your family lives it, then checks it against everyone's week before it lands on the calendar.">
+<meta property="og:description" content="Four steps, and the week starts making sense. No setup weekend, no importing spreadsheets.">
 <meta property="og:url" content="https://homie.family/how-it-works.html">
 <meta property="og:image" content="https://homie.family/og.png">
-<meta property="og:image:width" content="1024">
-<meta property="og:image:height" content="1024">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How Homie works">
-<meta name="twitter:description" content="Homie looks at a plan the way your family lives it, then checks it against everyone's week before it lands on the calendar.">
-<meta name="twitter:image" content="https://homie.family/og.png">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 </head><body class="p-hiw">
-
-<nav class="wrap" style="display:flex;align-items:center;justify-content:space-between;padding-top:28px">
-<a href="index.html" style="display:flex;align-items:center;gap:11px;color:var(--text-strong)">
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="index.html">
 <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true" style="display:block;flex:none"><defs><linearGradient id="hm" x1="18" y1="6" x2="82" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4E6FBE"/><stop offset=".48" stop-color="#3F5FA8"/><stop offset="1" stop-color="#2E4A8C"/></linearGradient></defs><rect width="100" height="100" rx="22.5" fill="url(#hm)"/><rect x="60" y="22" width="7.5" height="20" rx="2.87" fill="#F5F7FB"/><path fill="#F5F7FB" d="M52.6 19.1 L79 42 Q82 44.4 82 48 L82 80 Q82 85 77 85 L23 85 Q18 85 18 80 L18 48 Q18 44.4 21 42 L47.4 19.1 Q50 16.8 52.6 19.1 Z"/><circle cx="33" cy="64" r="4.8" fill="#E8A98C" opacity=".85"/><circle cx="67" cy="64" r="4.8" fill="#E8A98C" opacity=".85"/><ellipse cx="41" cy="55" rx="4" ry="5" fill="#2E4A8C"/><ellipse cx="59" cy="55" rx="4" ry="5" fill="#2E4A8C"/><path d="M43.5 66 Q50 71 56.5 66" fill="none" stroke="#2E4A8C" stroke-width="3" stroke-linecap="round"/></svg>
-<span style="font:600 26px var(--font-display);letter-spacing:-0.01em">Homie</span></a>
-<div style="display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500">
-<a class="navlink active" href="how-it-works.html">How it works</a>
-<a class="navlink" href="features.html">Features</a>
-<a class="navlink" href="family.html">Family</a>
-<a class="navlink" href="privacy.html">Privacy</a>
-<a class="btn" style="padding:var(--pad-btn-sm);font-size:15px" href="mailto:homie.family@protonmail.com?subject=Homie%20invite%20request">Request an invite</a>
-</div></nav>
-
-<header class="hero wrap" style="display:grid;grid-template-columns:1fr 440px;gap:var(--gap-grid-lg);align-items:end;padding-top:80px;padding-bottom:24px">
-<div>
-<p class="eyebrow" style="margin:0 0 20px;color:var(--sage-eyebrow)">How it works</p>
-<h1 style="margin:0;font:var(--text-display);letter-spacing:var(--tracking-display);color:var(--text-heading);text-wrap:pretty">A calendar knows what’s&nbsp;on. Homie knows what it&nbsp;takes.</h1>
+<span>Homie</span></a>
+<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Menu">
+<label for="nav-toggle" class="nav-burger" aria-hidden="true"><i></i><i></i><i></i></label>
+<nav class="nav" aria-label="Main">
+<a href="how-it-works.html" aria-current="page">How it works</a>
+<a href="features.html">Features</a>
+<a href="family.html">Family</a>
+<a href="pricing.html">Pricing</a>
+<a href="privacy.html">Privacy</a>
+<a href="faq.html">FAQ</a>
+</nav>
+<a class="cta" href="get.html">Request an invite</a>
 </div>
-<p style="margin:0;font:var(--text-lead);text-wrap:pretty">Homie looks at a plan the way your family lives it, not as a tidy block on a grid. Who’s going, who’s driving, when you really have to leave. It checks all of that against everyone’s week before anything lands on the calendar.</p>
 </header>
 
-<!-- MONEY GRAPHIC: the committed window -->
-<section style="padding:var(--section-pad-y) 0;padding-top:56px">
-<div class="wrap">
-<p class="eyebrow" style="margin:0 0 16px;color:var(--accent)">The committed window</p>
-<h2 style="margin:0;font:var(--text-h2);color:var(--text-heading);max-width:660px;text-wrap:pretty">A calendar saves the date. Homie plans the getting&nbsp;there.</h2>
-<p style="margin:18px 0 0;font:var(--text-body-lg);max-width:620px;text-wrap:pretty">“Soccer game, 9:00 AM” hides the 8:13 scramble to get everyone out the door. Homie plans for the whole thing, not just the hour on the grid. It counts the getting ready, the drive, and a little buffer so nobody’s sprinting in late, and it schedules around all of it.</p>
-<div class="cw-panel">
-<div class="cw">
-<div class="cw-seg cw-prep"><span>Prep</span><span>15 min</span></div>
-<div class="cw-seg cw-drive"><span>Drive</span><span>22 min</span></div>
-<div class="cw-seg cw-buffer"><span>Buffer</span><span>10 min</span></div>
-<div class="cw-event"><span>Soccer game — Maya · Dad drives</span><span>9:00 – 10:00 AM · Lakeshore field</span></div>
+<main>
+<div class="intro">
+<p class="eyebrow">How it works</p>
+<h1 class="h-page" style="margin-top:18px">Four steps, and the week starts making sense.</h1>
+<p class="lead" style="margin-top:24px">No setup weekend, no importing spreadsheets. Tell Homie who&rsquo;s in the family and go.</p>
 </div>
-<div class="cw-caps">
-<span class="cap-naive">A shared calendar shows one tidy hour.</span>
-<span class="cap-honest">Real life means out the door by <strong>8:13 AM</strong>, home by 10:00.</span>
+
+<div class="steps">
+<div class="card step">
+<div class="num">01</div>
+<div>
+<h3>Introduce your family</h3>
+<p class="body">A family name, who&rsquo;s in it, and your home address so Homie can judge real travel times. That&rsquo;s the whole setup.</p>
+</div>
+<div class="mock">
+<div class="mock-sec">Household</div>
+<div class="mock-field">The Rivera family</div>
+<div class="mock-sec">Home</div>
+<div class="mock-field">123 Main St, Springfield</div>
+<div class="mock-sec">Members</div>
+<div class="mock-chips"><span class="mchip"><i style="background:var(--member-1)"></i>Kate</span><span class="mchip"><i style="background:var(--member-3)"></i>Sam</span><span class="mchip"><i style="background:var(--member-2)"></i>Maya</span><span class="mock-add">+ Add member</span></div>
+</div>
+</div>
+<div class="card step">
+<div class="num">02</div>
+<div>
+<h3>Add what&rsquo;s coming up</h3>
+<p class="body">Soccer on Saturday, the dentist on Tuesday, who&rsquo;s driving. As you enter it Homie tells you straight away if it clashes with something, so you find out while you&rsquo;re still typing rather than the night before.</p>
+</div>
+<div class="mock">
+<div class="mock-row"><span class="k">Title</span><span class="v">Soccer practice</span></div>
+<div class="mock-row"><span class="k">Who</span><span class="v">Maya &middot; Dad drives</span></div>
+<div class="mock-row"><span class="k">Where</span><span class="v">Lincoln Field</span></div>
+<div class="mock-warn"><b>Heads up</b> &mdash; Leo&rsquo;s karate needs a driver at 4:30.</div>
+<div class="mock-btns"><span class="mock-btn">Add to Plans</span></div>
+</div>
+</div>
+<div class="card step">
+<div class="num">03</div>
+<div>
+<h3>Ask before you say yes</h3>
+<p class="body">&ldquo;Can we fit a party Sunday at 2?&rdquo; You get a yes, a no, or an honest &ldquo;only if someone else drives&rdquo;, with the reason in plain words.</p>
+</div>
+<div class="mock" style="justify-content:center">
+<div class="ask">Can we fit a party Sunday at 2?</div>
+<div class="ans"><span class="ak">Yes &mdash; but it&rsquo;s tight</span>Maya&rsquo;s soccer ends 1:15 across town. Mom is free from 1:30 and can drive.</div>
+</div>
+</div>
+<div class="card step">
+<div class="num">04</div>
+<div>
+<h3>Bring the family in</h3>
+<p class="body">Send a code to your partner, the kids, whoever helps. Everyone&rsquo;s phone shows the same week, and changes turn up wherever they&rsquo;re made.</p>
+</div>
+<div class="mock" style="justify-content:center">
+<div class="mock-code">7K4P&middot;92</div>
+<div class="mock-note">Send this to whoever&rsquo;s joining. Works once, expires in 48 hours.</div>
+<div class="mock-btns" style="margin-top:0"><span class="mock-btn ghost">Text invite</span><span class="mock-btn ghost">Email invite</span></div>
+</div>
+</div>
+</div>
+
+<section class="band views">
+<div class="wrap duo-wide">
+<div>
+<h2 class="h-sec-sm">Four ways to look at the same week.</h2>
+<p class="body-md">A list for today, the week day by day, lanes when you want to see each person&rsquo;s hours side by side, and a month grid when you&rsquo;re looking further out.</p>
+</div>
+<div class="mock mock-lg">
+<div class="mock-views">
+
+<div class="mock-view"><em>agenda</em>
+<div class="mv-agenda">
+<div class="mv-day">Saturday</div>
+<div class="mv-card"><b>Soccer tournament<i>9:00 AM</i></b><s>&#129418; Maya &middot; Grandma drives</s></div>
+<div class="mv-day">Sunday</div>
+<div class="mv-card"><b>Birthday party<i>2:00 PM</i></b><s>&#128034; Leo &middot; across town</s></div>
+</div>
+</div>
+
+<div class="mock-view"><em>lanes</em>
+<div class="mv-lanes">
+<div class="mv-lhead"><span></span><span>&#129418;</span><span>&#128034;</span><span>&#129417;</span></div>
+<div class="mv-lbody">
+<div class="mv-hours"><i>9</i><i>10</i><i>11</i><i>12</i><i>1</i></div>
+<div class="mv-cols">
+<div class="mv-col"><div class="mv-fp" style="top:2%;height:32%"></div><div class="mv-anchor" style="top:9%;height:22%">Soccer</div></div>
+<div class="mv-col"><div class="mv-fp" style="top:44%;height:34%"></div><div class="mv-anchor" style="top:52%;height:22%">Swim</div></div>
+<div class="mv-col"><div class="mv-fp" style="top:20%;height:30%"></div><div class="mv-anchor" style="top:27%;height:20%">Shift</div></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="mock-view"><em>week</em>
+<div class="mv-week">
+<div class="mv-wday"><b>Saturday<i>Sep 19</i></b><span class="mv-badge">&#9888; 2</span></div>
+<div class="mv-ev"><time>9:00 AM</time><span>Soccer tournament</span><span>&#129418;</span></div>
+<div class="mv-ev"><time>11:00 AM</time><span>Swim lesson</span><span>&#128034;</span></div>
+<div class="mv-wday"><b>Sunday<i>Sep 20</i></b></div>
+<div class="mv-ev"><time>2:00 PM</time><span>Birthday party</span><span>&#128034;</span></div>
+</div>
+</div>
+
+<div class="mock-view"><em>month</em>
+<div class="mv-month">
+<div class="mv-mhead"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div>
+<div class="mv-mgrid">
+<div class="mv-cell out"><u>31</u></div><div class="mv-cell"><u>1</u></div><div class="mv-cell"><u>2</u><span>&#129418;</span></div><div class="mv-cell"><u>3</u></div><div class="mv-cell"><u>4</u><span>&#128034;</span></div><div class="mv-cell"><u>5</u></div><div class="mv-cell"><u>6</u><span>&#129418;&#128034;</span></div>
+<div class="mv-cell"><u>7</u></div><div class="mv-cell"><u>8</u><span>&#129417;</span></div><div class="mv-cell bad"><u>9</u><span>&#129418;&#128034;</span></div><div class="mv-cell"><u>10</u></div><div class="mv-cell"><u>11</u><span>&#128034;</span></div><div class="mv-cell"><u>12</u></div><div class="mv-cell"><u>13</u><span>&#129418;</span></div>
+<div class="mv-cell"><u>14</u><span>&#129417;</span></div><div class="mv-cell"><u>15</u></div><div class="mv-cell"><u>16</u><span>&#129418;</span></div><div class="mv-cell"><u>17</u></div><div class="mv-cell bad"><u>18</u><span>&#129418;&#129417;</span></div><div class="mv-cell"><u>19</u><span>&#128034;</span></div><div class="mv-cell"><u>20</u></div>
+</div>
+</div>
+</div>
+
 </div>
 </div>
 </div>
 </section>
+</main>
 
-<!-- SPINE: capture -> review -> timeline (W1) -->
-<section style="background:var(--surface-section);padding:72px 0 80px">
-<div class="wrap">
-<p class="eyebrow" style="margin:0 0 16px;color:var(--accent)">Schedule · review · plan</p>
-<h2 style="margin:0 0 8px;font:var(--text-h2);color:var(--text-heading);max-width:640px;text-wrap:pretty">Three steps, then it’s off your mind.</h2>
-<p style="margin:12px 0 0;font:var(--text-body-lg);max-width:600px;color:var(--text-body)">Say the plan, check what Homie heard, and it’s on everyone’s phone. Here’s how one soccer tournament goes from a sideline mention to a sorted Saturday.</p>
-
-<div class="step">
-<div>
-<span class="num">1</span>
-<h3 style="margin:0;font:var(--text-h3);color:var(--text-heading)">Say it, don’t type a form.</h3>
-<p style="margin:14px 0 0;font:var(--text-body-lg);text-wrap:pretty">Walking out of practice, Dad holds down the mic and just says it: <em>“Maya has a soccer tournament Saturday, 9 to 4, at Lakeshore field.”</em> Homie turns that into a real plan. Your words become text right on the phone, and it still works with no signal, so a dead zone at the field doesn’t stop you. And nothing gets scheduled unless you say so. Homie won’t assume you meant to commit.</p>
+<footer class="site-footer">
+<div class="footer-inner">
+<a class="footer-mark" href="index.html">Homie</a>
+<div class="footer-links">
+<a href="how-it-works.html">How it works</a>
+<a href="features.html">Features</a>
+<a href="family.html">Family</a>
+<a href="pricing.html">Pricing</a>
+<a href="faq.html">FAQ</a>
+<a href="privacy.html">Privacy</a>
+<a href="get.html">Get Homie</a>
 </div>
-<div class="step-mock"><div class="mock">
-<div style="font:600 17px var(--font-display);color:var(--text-heading);margin-bottom:6px">What’s coming up?</div>
-<div class="miclabel"><span class="dot"></span> Tap to speak or type it</div>
-<div class="field">“Maya has a soccer tournament Saturday, 9 to 4, at Lakeshore field.”</div>
-<div class="verbs"><span class="btn">Add to Plans</span><span class="btn secondary">Can we fit it?</span></div>
-</div></div>
+<span>homie.family &middot; made by a parent who uses it daily</span>
 </div>
-
-<div class="step">
-<div>
-<span class="num">2</span>
-<h3 style="margin:0;font:var(--text-h3);color:var(--text-heading)">See what it understood, before it’s real.</h3>
-<p style="margin:14px 0 0;font:var(--text-body-lg);text-wrap:pretty">Nothing hits the family’s week without a quick look first. One screen shows you the full date, who’s included, and the place Homie assumed, so anything that’s off is easy to catch.</p>
-<p style="margin:14px 0 0;font:var(--text-body-lg);text-wrap:pretty">The live fit check catches what a plain calendar can’t. The tournament runs right into Leo’s dentist, and there’s only one parent to get two kids to two places. Dad hands the dentist run to grandma under <em>Covered by</em> and adds it.</p>
-</div>
-<div class="step-mock"><div class="mock">
-<p style="margin:0 0 12px;font-style:italic;font-size:13.5px;color:var(--text-muted)">“Maya has a soccer tournament Saturday, 9 to 4, at Lakeshore field.”</p>
-<div style="margin:0 0 14px;background:var(--danger-soft);border-radius:12px;padding:12px 16px">
-<div style="display:flex;gap:8px;align-items:center;color:var(--danger);font-weight:600;font-size:13.5px"><span>⚠</span><span style="flex:1">In the way: 1 plan</span><span>⌄</span></div>
-<div style="margin-top:6px;padding-left:22px">
-<div style="font-size:11px;font-weight:700;letter-spacing:0.04em;color:var(--danger);opacity:.75">PLANS</div>
-<div style="padding:6px 0;border-top:1px solid var(--border);margin-top:4px">
-<div style="font-size:13px;font-weight:700;color:var(--danger)">Leo’s dentist <span style="font-weight:400;color:var(--text-muted)">· Leo</span></div>
-<div style="font-size:11.5px;color:var(--text-muted)">not enough adults · 9:30 – 10:15 AM</div>
-</div>
-<div style="font-size:11px;font-weight:700;letter-spacing:0.04em;color:var(--danger);opacity:.75;margin-top:2px">MOVE MINE TO</div>
-<div style="display:flex;gap:8px;margin-top:6px"><span class="fix">11:30 AM</span><span class="fix">1:00 PM</span></div>
-</div>
-</div>
-<div class="row"><span class="k">Title</span><span class="v">Soccer tournament</span></div>
-<div class="row"><span class="k">Date</span><span class="v">Saturday, April 12 · 9:00 AM – 4:00 PM</span></div>
-<div class="row"><span class="k">Getting there</span><span class="v">Lakeshore field · ~25 min drive · leave by 8:20 AM</span></div>
-<div style="padding:11px 0;border-bottom:1px solid var(--line-soft)">
-<div style="font-size:13px;color:var(--text-muted);margin-bottom:9px">Who</div>
-<div class="chips"><span class="chip"><span class="cdot" style="background:var(--member-3)"></span>Dad</span><span class="chip"><span class="cdot" style="background:var(--member-4)"></span>Kate</span><span class="chip"><span class="cdot" style="background:var(--member-2)"></span>Leo</span><span class="chip sel"><span class="cdot" style="background:var(--member-1)"></span>Maya</span></div>
-</div>
-<div class="row"><span class="k">Covered by</span><span class="v">Extra Help · grandma</span></div>
-<div style="margin-top:16px;display:flex;flex-direction:column;gap:10px">
-<span class="btn" style="width:100%;text-align:center;border-radius:12px">Add to Plans</span>
-<span style="text-align:center;font-size:14px;color:var(--text-muted)">Save for later</span>
-</div>
-</div></div>
-</div>
-
-<div class="step">
-<div>
-<span class="num">3</span>
-<h3 style="margin:0;font:var(--text-h3);color:var(--text-heading)">The whole house sees the same morning.</h3>
-<p style="margin:14px 0 0;font:var(--text-body-lg);text-wrap:pretty">The plan shows up on both parents’ phones within seconds, with the leave-by time already worked out and grandma down as the driver.</p>
-<p style="margin:14px 0 0;font:var(--text-body-lg);text-wrap:pretty">Invite anyone who helps run the week. Grandma sees the rides she’s covering, the nanny sees her own days, and the kids get their own view once they’re old enough for a phone. Everyone sees just what they need, and you decide what that is.</p>
-</div>
-<div class="step-mock"><div class="mock">
-<p style="margin:0 0 14px;font:600 13px var(--font-body);letter-spacing:0.06em;text-transform:uppercase;color:var(--text-muted)">Saturday</p>
-<div style="border:1px solid var(--border);border-radius:14px;padding:16px 18px;background:var(--surface-page)">
-<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:600 17px var(--font-display);color:var(--text-heading)">Soccer tournament</span><span style="font-size:13px;color:var(--text-muted)">9:00 AM – 4:00 PM</span></div>
-<div style="display:flex;align-items:center;gap:8px;margin-top:8px"><span class="chip"><span class="cdot" style="background:var(--member-1)"></span>Maya</span><span style="font-size:13.5px;color:var(--text-body)">Grandma drives</span></div>
-<div class="honest">
-<span class="seg-dot"><i style="background:var(--sage-200)"></i>leave 8:20 AM</span>
-<span class="seg-dot"><i style="background:var(--sky-200)"></i>~25 min drive</span>
-<span class="seg-dot"><i style="background:var(--accent)"></i>plays 9:00 AM</span>
-</div>
-</div>
-</div></div>
-</div>
-
-</div>
-</section>
-
-<!-- CTA -->
-<section style="background:var(--surface-inverse);padding:var(--section-pad-y) 0">
-<div class="wrap" style="text-align:center">
-<h2 style="margin:0 auto;max-width:560px;font:var(--text-h2-lg);color:var(--inv-heading);text-wrap:pretty">Meet your Homie.</h2>
-<p style="margin:18px auto 0;max-width:460px;font:var(--text-body-lg);color:var(--inv-body)">A quiet helper for the family logistics that usually live in one parent’s head.</p>
-<div style="margin-top:32px;display:flex;flex-direction:column;align-items:center;gap:14px">
-<a class="btn" href="mailto:homie.family@protonmail.com?subject=Homie%20invite%20request">Request an invite</a>
-<span style="font-size:14px;color:var(--inv-muted)">Invite-only alpha · iPhone & Android</span>
-</div>
-</div>
-</section>
-
-<footer style="border-top:1px solid var(--line-soft)"><div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center;padding-top:32px;padding-bottom:32px;font-size:13.5px;color:var(--text-muted)">
-<a href="index.html" style="display:flex;align-items:center;gap:9px;color:var(--text-body)">
-<svg width="22" height="22" viewBox="0 0 100 100" aria-hidden="true" style="display:block;flex:none"><defs><linearGradient id="hmf" x1="18" y1="6" x2="82" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4E6FBE"/><stop offset=".48" stop-color="#3F5FA8"/><stop offset="1" stop-color="#2E4A8C"/></linearGradient></defs><rect width="100" height="100" rx="22.5" fill="url(#hmf)"/><rect x="60" y="22" width="7.5" height="20" rx="2.87" fill="#F5F7FB"/><path fill="#F5F7FB" d="M52.6 19.1 L79 42 Q82 44.4 82 48 L82 80 Q82 85 77 85 L23 85 Q18 85 18 80 L18 48 Q18 44.4 21 42 L47.4 19.1 Q50 16.8 52.6 19.1 Z"/><ellipse cx="41" cy="55" rx="4" ry="5" fill="#2E4A8C"/><ellipse cx="59" cy="55" rx="4" ry="5" fill="#2E4A8C"/><path d="M43.5 66 Q50 71 56.5 66" fill="none" stroke="#2E4A8C" stroke-width="3" stroke-linecap="round"/></svg>
-<span style="font:400 17px var(--font-display)">Homie</span></a>
-<div style="display:flex;flex-wrap:wrap;gap:24px">
-<a class="navlink" href="how-it-works.html" style="color:var(--text-muted)">How it works</a>
-<a class="navlink" href="features.html" style="color:var(--text-muted)">Features</a>
-<a class="navlink" href="family.html" style="color:var(--text-muted)">Family</a>
-<a class="navlink" href="faq.html" style="color:var(--text-muted)">FAQ</a>
-<a href="https://privacy.homie.family/" style="color:var(--text-muted)">Privacy policy</a>
-<a href="mailto:homie.family@protonmail.com" style="color:var(--text-muted)">Contact</a>
-</div>
-<span>homie.family · made by a parent who uses it daily</span>
-</div></footer>
-
+</footer>
 </body></html>

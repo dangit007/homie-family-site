@@ -1,11 +1,14 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Homie — Get the app</title>
+<title>Get Homie — we're letting families in a few at a time</title>
+<meta name="description" content="Homie is in a private TestFlight alpha on iPhone. Ask for an invite and we'll send you one as places come free.">
 <link rel="icon" href="favicon.png" type="image/png">
 <!-- Link-preview (WhatsApp/iMessage/etc.) — needs a fetchable raster at an
-     absolute URL; SVG and data: URIs are ignored by most scrapers. -->
+     absolute URL; SVG and data: URIs are ignored by most scrapers. The app's
+     in-product "Share Homie" / invite links point at this page (INSTALL_URL
+     in src/components/SyncSection.tsx), so it MUST stay deployed and MUST
+     keep an install route for people who already hold an invite. -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Homie">
 <meta property="og:title" content="Homie">
@@ -18,67 +21,177 @@
 <meta name="twitter:title" content="Homie">
 <meta name="twitter:description" content="A calm home for your family's schedule. Set up your own in a couple of minutes.">
 <meta name="twitter:image" content="https://homie.family/og.png">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 </head><body class="p-get">
-
-<nav class="wrap" style="display:flex;align-items:center;justify-content:space-between;padding-top:28px">
-<a href="index.html" style="display:flex;align-items:center;gap:11px;color:var(--text-strong)">
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="index.html">
 <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true" style="display:block;flex:none"><defs><linearGradient id="hm" x1="18" y1="6" x2="82" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4E6FBE"/><stop offset=".48" stop-color="#3F5FA8"/><stop offset="1" stop-color="#2E4A8C"/></linearGradient></defs><rect width="100" height="100" rx="22.5" fill="url(#hm)"/><rect x="60" y="22" width="7.5" height="20" rx="2.87" fill="#F5F7FB"/><path fill="#F5F7FB" d="M52.6 19.1 L79 42 Q82 44.4 82 48 L82 80 Q82 85 77 85 L23 85 Q18 85 18 80 L18 48 Q18 44.4 21 42 L47.4 19.1 Q50 16.8 52.6 19.1 Z"/><circle cx="33" cy="64" r="4.8" fill="#E8A98C" opacity=".85"/><circle cx="67" cy="64" r="4.8" fill="#E8A98C" opacity=".85"/><ellipse cx="41" cy="55" rx="4" ry="5" fill="#2E4A8C"/><ellipse cx="59" cy="55" rx="4" ry="5" fill="#2E4A8C"/><path d="M43.5 66 Q50 71 56.5 66" fill="none" stroke="#2E4A8C" stroke-width="3" stroke-linecap="round"/></svg>
-<span style="font:600 26px var(--font-display);letter-spacing:-0.01em">Homie</span></a>
-<div style="display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500">
-<a class="navlink" href="how-it-works.html">How it works</a>
-<a class="navlink" href="features.html">Features</a>
-<a class="navlink" href="family.html">Family</a>
-<a class="navlink" href="faq.html">FAQ</a>
-</div></nav>
-
-<header class="hero wrap narrow" style="padding-top:80px;padding-bottom:24px">
-<p class="eyebrow" style="margin:0 0 20px;color:var(--sage-eyebrow)">Get Homie</p>
-<h1 style="margin:0;font:var(--text-display);letter-spacing:var(--tracking-display);color:var(--text-heading);text-wrap:pretty">Bring Homie to your family.</h1>
-<p style="margin:28px 0 0;font:var(--text-lead);text-wrap:pretty">Homie is in a small, invite-only alpha. Pick your phone below to get set up, then open the app and choose <strong>New household</strong> to start your own.</p>
+<span>Homie</span></a>
+<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Menu">
+<label for="nav-toggle" class="nav-burger" aria-hidden="true"><i></i><i></i><i></i></label>
+<nav class="nav" aria-label="Main">
+<a href="how-it-works.html">How it works</a>
+<a href="features.html">Features</a>
+<a href="family.html">Family</a>
+<a href="pricing.html">Pricing</a>
+<a href="privacy.html">Privacy</a>
+<a href="faq.html">FAQ</a>
+</nav>
+<a class="cta" href="get.html" aria-current="page">Request an invite</a>
+</div>
 </header>
 
-<!-- Platform cards -->
-<div class="wrap narrow" style="padding-bottom:24px">
-<div style="display:flex;flex-wrap:wrap;gap:18px">
+<main>
+<section class="hero">
+<div>
+<p class="eyebrow">Get Homie</p>
+<h1 class="h-page" style="margin-top:18px">We&rsquo;re letting families in a few at a time.</h1>
+<p class="lead">Homie is in a private TestFlight alpha on iPhone while we get it ready for the App Store. Ask for an invite and we&rsquo;ll send you one as places come free.</p>
 
-<!-- iPhone -->
-<div style="flex:1 1 280px;background:var(--surface-card);border:1px solid var(--border);border-radius:var(--radius-panel);padding:30px 28px;display:flex;flex-direction:column">
-<svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true" style="display:block;margin-bottom:16px" fill="var(--text-strong)"><path d="M17.05 12.54c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.9-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.88 2.65 3.22 2.6 1.29-.05 1.78-.83 3.34-.83 1.56 0 2 .83 3.37.81 1.39-.03 2.27-1.27 3.12-2.53.98-1.45 1.39-2.85 1.41-2.93-.03-.01-2.7-1.04-2.72-4.12M14.6 4.9c.71-.86 1.19-2.06 1.06-3.25-1.02.04-2.26.68-3 1.54-.66.76-1.24 1.98-1.08 3.14 1.14.09 2.31-.58 3.02-1.43"/></svg>
-<h3 style="margin:0 0 6px;font:600 20px var(--font-display);color:var(--text-strong)">iPhone &amp; iPad</h3>
-<p style="margin:0 0 22px;font-size:15px;color:var(--text-body);line-height:1.55;flex:1">Install through TestFlight, Apple’s app for trying beta apps. First launch opens TestFlight, then Homie.</p>
-<a class="btn" style="text-align:center" href="https://testflight.apple.com/join/TnYA3wsn">Install on iPhone</a>
-<p style="margin:14px 0 0;font-size:13px;color:var(--text-muted)">Needs an Apple ID aged 13+. Kids’ devices are set up by a parent.</p>
+<form class="invite-form" id="invite-form" novalidate>
+<input type="email" id="invite-email" name="email" placeholder="you@example.com" autocomplete="email" spellcheck="false" required aria-label="Your email address" aria-describedby="invite-note">
+<button class="btn" type="submit">Request an invite</button>
+</form>
+<p class="form-error" id="invite-error" role="alert" hidden></p>
+<div class="form-done" id="invite-done" role="status" hidden></div>
+<p class="form-note" id="invite-note">One email when there&rsquo;s a place for you. Nothing else, ever.</p>
+<noscript><p class="form-note"><a href="mailto:homie.family@protonmail.com?subject=Homie%20invite%20request">Email us for an invite</a> and we&rsquo;ll reply as places come free.</p></noscript>
+<p class="have-invite">Already have an invite? <a href="https://testflight.apple.com/join/TnYA3wsn">Install on iPhone through TestFlight</a>.</p>
+
+<div class="rule-row">
+<span><strong>iPhone</strong> &middot; invite-only alpha</span><span><strong>Android</strong> &middot; coming soon</span>
 </div>
-
-<!-- Android -->
-<div style="flex:1 1 280px;background:var(--surface-card);border:1px solid var(--border);border-radius:var(--radius-panel);padding:30px 28px;display:flex;flex-direction:column">
-<svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true" style="display:block;margin-bottom:16px" fill="var(--text-strong)"><path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.24a11.43 11.43 0 00-8.94 0L5.65 5.67c-.19-.29-.57-.38-.85-.22-.3.16-.42.54-.26.85L6.38 9.48A10.78 10.78 0 001 18h22a10.78 10.78 0 00-5.4-8.52M7 15.25a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5m10 0a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5"/></svg>
-<h3 style="margin:0 0 6px;font:600 20px var(--font-display);color:var(--text-strong)">Android</h3>
-<p style="margin:0 0 22px;font-size:15px;color:var(--text-body);line-height:1.55;flex:1">Android is in early testing, and we add families one at a time. Email us and we’ll put you on the test and send your install link.</p>
-<!-- TODO: when a public Play testing track opens, swap this mailto for the Play opt-in URL and make it class="btn". -->
-<a class="btn secondary" style="text-align:center" href="mailto:homie.family@protonmail.com?subject=Homie%20Android%20access">Request Android access</a>
-<p style="margin:14px 0 0;font-size:13px;color:var(--text-muted)">We’ll reply from a real person, usually within a day.</p>
 </div>
-
+<div class="phone phone-sm" aria-hidden="true">
+<div class="phone-screen">
+<div class="m-status"><span>9:41</span><span class="dots"><i></i><i></i><i></i></span></div>
+<div class="appbar"><b>This week</b><small>Everyone &middot; Toronto</small></div>
+<div class="scenes">
+<div class="scene scene-a">
+<div class="feed">
+<div class="daylbl">SATURDAY</div>
+<div class="pcardm">
+<div class="ph"><b>Soccer tournament</b><small>9:00 AM</small></div>
+<div class="chiprow"><span class="mchip"><i style="background:var(--member-1)"></i>Maya</span><span class="cov">Grandma drives</span></div>
+<div class="hint"><span><i style="background:var(--sage-200)"></i>leave 8:20</span><span><i style="background:var(--sky-200)"></i>~25 min</span><span><i style="background:var(--accent)"></i>plays 9:00</span></div>
 </div>
-
-<p style="margin:34px 0 0;font-size:15px;color:var(--text-body)">New to Homie? See <a href="how-it-works.html">how it works</a> or <a href="faq.html">the honest FAQ</a>.</p>
+<div class="pcardm">
+<div class="ph"><b>Swim lesson</b><small>11:00 AM</small></div>
+<div class="chiprow"><span class="mchip"><i style="background:var(--member-2)"></i>Leo</span><span class="cov">Dad &middot; leave 10:35</span></div>
 </div>
-
-<footer style="border-top:1px solid var(--line-soft);margin-top:56px"><div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center;padding-top:32px;padding-bottom:32px;font-size:13.5px;color:var(--text-muted)">
-<a href="index.html" style="display:flex;align-items:center;gap:9px;color:var(--text-body)">
-<svg width="22" height="22" viewBox="0 0 100 100" aria-hidden="true" style="display:block;flex:none"><defs><linearGradient id="hmf" x1="18" y1="6" x2="82" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4E6FBE"/><stop offset=".48" stop-color="#3F5FA8"/><stop offset="1" stop-color="#2E4A8C"/></linearGradient></defs><rect width="100" height="100" rx="22.5" fill="url(#hmf)"/><rect x="60" y="22" width="7.5" height="20" rx="2.87" fill="#F5F7FB"/><path fill="#F5F7FB" d="M52.6 19.1 L79 42 Q82 44.4 82 48 L82 80 Q82 85 77 85 L23 85 Q18 85 18 80 L18 48 Q18 44.4 21 42 L47.4 19.1 Q50 16.8 52.6 19.1 Z"/><ellipse cx="41" cy="55" rx="4" ry="5" fill="#2E4A8C"/><ellipse cx="59" cy="55" rx="4" ry="5" fill="#2E4A8C"/><path d="M43.5 66 Q50 71 56.5 66" fill="none" stroke="#2E4A8C" stroke-width="3" stroke-linecap="round"/></svg>
-<span style="font:400 17px var(--font-display)">Homie</span></a>
-<div style="display:flex;flex-wrap:wrap;gap:24px">
-<a class="navlink" href="how-it-works.html" style="color:var(--text-muted)">How it works</a>
-<a class="navlink" href="features.html" style="color:var(--text-muted)">Features</a>
-<a class="navlink" href="family.html" style="color:var(--text-muted)">Family</a>
-<a class="navlink" href="faq.html" style="color:var(--text-muted)">FAQ</a>
-<a href="https://privacy.homie.family/" style="color:var(--text-muted)">Privacy policy</a>
-<a href="mailto:homie.family@protonmail.com" style="color:var(--text-muted)">Contact</a>
+<div class="daylbl">SUNDAY</div>
+<div class="pcardm">
+<div class="ph"><b>Birthday party</b><small>2:00 PM</small></div>
+<div class="chiprow"><span class="mchip"><i style="background:var(--member-2)"></i>Leo</span><span class="cov">across town</span></div>
 </div>
-<span>homie.family · made by a parent who uses it daily</span>
-</div></footer>
+</div>
+</div>
+<div class="scene scene-b">
+<div class="scenetitle">Saturday &middot; a clash</div>
+<div class="conf">
+<div class="confhd"><span class="rdot"></span>Not enough adults <small>&middot; 6:00 PM</small></div>
+<div class="clane"><span class="who">Maya</span><div class="ctrack"><div class="cblk" style="left:28%;width:48%;background:var(--accent);color:var(--on-accent)">Soccer</div></div></div>
+<div class="clane"><span class="who">Leo</span><div class="ctrack"><div class="cblk" style="left:32%;width:46%;background:var(--accent);color:var(--on-accent)">Karate</div></div></div>
+<div class="clane"><span class="who" style="color:var(--danger)">Dad</span><div class="ctrack" style="border-color:var(--danger-soft)"><div class="cblk" style="left:28%;width:50%;background:var(--danger-soft);color:var(--danger)">one driver</div></div></div>
+<div class="fixrow"><span class="fchip on">Kate takes Leo</span><span class="fchip">Extra help</span></div>
+<div class="resolved">&#10003; Resolved &mdash; both kids covered</div>
+</div>
+</div>
+<div class="scene scene-c">
+<div class="scenetitle">Before you say yes</div>
+<div class="ask">Can we fit camping Aug 12&ndash;15?</div>
+<div class="ans"><span class="ak">Yes &mdash; if 3 things give</span>Skip Maya&rsquo;s Thursday swim &middot; nanny&rsquo;s Friday off &middot; Leo&rsquo;s piano needs a ride.</div>
+<div class="addbtn">Add to Plans &middot; +3 changes</div>
+</div>
+</div>
+<div class="tabbar">
+<span class="on"><i></i>Plans</span>
+<span><i></i>Schedule</span>
+<span><i></i>Home</span>
+</div>
+</div>
+</div>
+</section>
 
+<section class="band day-one">
+<div class="wrap grid-3">
+<div>
+<h3>What you get on day one</h3>
+<p class="body-sm">The full app, free on your phone. Add the family when you&rsquo;re ready.</p>
+</div>
+<div>
+<h3>What we ask</h3>
+<p class="body-sm">Tell us when something feels wrong. Alpha families shape what gets built next.</p>
+</div>
+<div>
+<h3>When it&rsquo;s on the App Store</h3>
+<p class="body-sm">Your household comes with you, exactly as it is. Nothing to move.</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="footer-inner">
+<a class="footer-mark" href="index.html">Homie</a>
+<div class="footer-links">
+<a href="how-it-works.html">How it works</a>
+<a href="features.html">Features</a>
+<a href="family.html">Family</a>
+<a href="pricing.html">Pricing</a>
+<a href="faq.html">FAQ</a>
+<a href="privacy.html">Privacy</a>
+<a href="get.html">Get Homie</a>
+</div>
+<span>homie.family &middot; made by a parent who uses it daily</span>
+</div>
+</footer>
+
+<script>
+/* Invite form. The site is static (GitHub Pages, no backend), so "submit"
+   composes a mail to the contact address — the same route the CTA used
+   before the redesign. Progressive enhancement: with no script the button
+   still posts nothing, so a plain mailto sits in the <noscript> above. */
+(function () {
+  var form = document.getElementById('invite-form');
+  var input = document.getElementById('invite-email');
+  var button = form.querySelector('button');
+  var error = document.getElementById('invite-error');
+  var note = document.getElementById('invite-note');
+  var done = document.getElementById('invite-done');
+  var valid = function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); };
+
+  button.disabled = true;
+  input.addEventListener('input', function () {
+    button.disabled = !valid(input.value.trim());
+    error.hidden = true;
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var address = input.value.trim();
+    if (!valid(address)) {
+      error.textContent = 'That doesn’t look like an email address — mind checking it?';
+      error.hidden = false;
+      return;
+    }
+    try {
+      window.location.href = 'mailto:homie.family@protonmail.com'
+        + '?subject=' + encodeURIComponent('Homie invite request')
+        + '&body=' + encodeURIComponent('Please add ' + address + ' to the Homie invite list.');
+    } catch (err) {
+      error.textContent = 'Something went wrong opening your email app. Write to homie.family@protonmail.com and we’ll sort it out.';
+      error.hidden = false;
+      return;
+    }
+    form.hidden = true;
+    note.hidden = true;
+    error.hidden = true;
+    done.textContent = 'We’ve opened an email addressed to us with ' + address
+      + ' in it. Send it and you’re on the list — we’ll write back when there’s a place.';
+    done.hidden = false;
+  });
+})();
+</script>
 </body></html>
