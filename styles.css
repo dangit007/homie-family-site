@@ -577,3 +577,20 @@ p{margin:0}
   .scene-b,.scene-c{opacity:0}
   .scene-a .feed{transform:none}
 }
+
+/* ── Connect an assistant (#127): /oauth/consent/ — a focused page, no nav ── */
+.p-consent .consent-main{max-width:460px;margin:0 auto;padding:40px 20px 64px}
+.p-consent .consent-card{background:var(--surface-card);border:1px solid var(--border);border-radius:var(--radius-panel);padding:28px 26px}
+.p-consent .consent-title{font:500 30px/1.12 var(--font-display);letter-spacing:var(--tracking-display);color:var(--text-heading);margin:0 0 12px}
+.p-consent p{margin:0 0 14px;line-height:1.55}
+.p-consent .consent-list{margin:0 0 14px;padding-left:20px;line-height:1.6}
+.p-consent .consent-label{display:block;font-weight:600;font-size:14px;color:var(--text-strong);margin:12px 0 6px}
+.p-consent .consent-input{width:100%;box-sizing:border-box;font:16px var(--font-body);padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:var(--surface-card);color:var(--text-heading)}
+.p-consent .consent-input:focus{outline:2px solid var(--selection);border-color:var(--border-hover)}
+.p-consent .consent-wide{width:100%;margin-top:18px}
+.p-consent .consent-actions{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap;margin-top:6px}
+.p-consent .consent-note{font-size:13px;color:var(--text-muted);margin:14px 0 0}
+.p-consent .consent-who{font-size:13px;color:var(--text-muted);border-top:1px solid var(--line-soft);padding-top:14px;margin:20px 0 0}
+.p-consent .consent-link{background:none;border:0;padding:0;font:600 13px var(--font-body);color:var(--accent);cursor:pointer}
+.p-consent .consent-error{color:var(--danger);font-size:14px;margin:14px 0 0}
+.p-consent [hidden]{display:none !important}

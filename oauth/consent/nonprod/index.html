@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connect an assistant — Homie</title>
+<!-- Not a page to find: it opens from an AI assistant when someone connects
+     it to Homie (#127). NONPROD (homie-nonprod): the rehearsal project. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="stylesheet" href="/styles.css?v=4">
+</head><body class="p-consent">
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="/index.html">
+<svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true" style="display:block;flex:none"><defs><linearGradient id="hm" x1="18" y1="6" x2="82" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4E6FBE"/><stop offset=".48" stop-color="#3F5FA8"/><stop offset="1" stop-color="#2E4A8C"/></linearGradient></defs><rect width="100" height="100" rx="22.5" fill="url(#hm)"/><rect x="60" y="22" width="7.5" height="20" rx="2.87" fill="#F5F7FB"/><path fill="#F5F7FB" d="M52.6 19.1 L79 42 Q82 44.4 82 48 L82 80 Q82 85 77 85 L23 85 Q18 85 18 80 L18 48 Q18 44.4 21 42 L47.4 19.1 Q50 16.8 52.6 19.1 Z"/><circle cx="33" cy="64" r="4.8" fill="#E8A98C" opacity=".85"/><circle cx="67" cy="64" r="4.8" fill="#E8A98C" opacity=".85"/><ellipse cx="41" cy="55" rx="4" ry="5" fill="#2E4A8C"/><ellipse cx="59" cy="55" rx="4" ry="5" fill="#2E4A8C"/><path d="M43.5 66 Q50 71 56.5 66" fill="none" stroke="#2E4A8C" stroke-width="3" stroke-linecap="round"/></svg>
+<span>Homie</span></a>
+</div>
+</header>
+<main class="consent-main"><div class="consent-card">
+
+  <div id="idle" hidden>
+    <h1 class="consent-title">Connect an assistant to Homie</h1>
+    <p>This page opens from your AI assistant when you connect it to Homie.</p>
+  </div>
+
+  <div id="signin" hidden>
+    <h1 class="consent-title">Connect your assistant to Homie</h1>
+    <p>Sign in with your Homie account.</p>
+    <form id="signin-form">
+      <label class="consent-label" for="email">Email</label>
+      <input class="consent-input" id="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+      <label class="consent-label" for="password">Password</label>
+      <input class="consent-input" id="password" type="password" autocomplete="current-password" required>
+      <button class="btn consent-wide" type="submit">Sign in</button>
+    </form>
+    <p class="consent-note">Forgot your password? Reset it in the Homie app, then come back here.</p>
+  </div>
+
+  <div id="consent" hidden>
+    <h1 class="consent-title">Let <span data-app></span> use Homie?</h1>
+    <p><span data-app></span> will be able to read <span id="household">your household</span>:</p>
+    <ul class="consent-list">
+      <li>who's in the family</li>
+      <li>plans, routines and saved places</li>
+      <li>birthdays and anniversaries you can see</li>
+    </ul>
+    <p>When you ask <span data-app></span> about your family's schedule, those details, including family members' names, go to <span id="company"></span>. Nothing goes that you didn't ask about.</p>
+    <p>To stop, remove Homie from <span data-app></span>'s connectors.</p>
+    <div class="consent-actions">
+      <button class="btn-ghost" id="deny" type="button">Don't allow</button>
+      <button class="btn" id="allow" type="button">Allow</button>
+    </div>
+    <p class="consent-who"><span data-email></span> · <button class="consent-link" type="button" data-signout>Not you? Sign out</button></p>
+  </div>
+
+  <div id="refused" hidden>
+    <h1 class="consent-title">Not this account</h1>
+    <p>Only a household's grown-ups can connect an assistant to Homie. <span data-app></span> won't get access.</p>
+    <div class="consent-actions">
+      <button class="btn" id="close" type="button">Close</button>
+    </div>
+    <p class="consent-who"><span data-email></span> · <button class="consent-link" type="button" data-signout>Not you? Sign out</button></p>
+  </div>
+
+  <p class="consent-error" id="error" role="alert" hidden></p>
+</div></main>
+<script type="module">
+  import { startConsent } from '/oauth/consent.js';
+  startConsent({ url: 'https://cwrgfvybvgzzgupcvxkd.supabase.co', key: 'sb_publishable_PM_9-dhvVdNC5gXkN_iIaA_s0dJRLmk' });
+</script>
+</body></html>
